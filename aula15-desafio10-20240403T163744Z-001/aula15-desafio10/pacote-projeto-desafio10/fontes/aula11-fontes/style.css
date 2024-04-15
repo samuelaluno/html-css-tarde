@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+    h2{
+font-family: "STIX Two Text";
+    }
+
+
+    h1{
+        font-family: Sacramento;
+        font-weight: 400;
+        font-size: italic;
+        background: lightblue;
+        width: 300px;
+    }
+
+    p {
+        font-family: "work sens";
+        font-weight: 300;
+        font-style: normal;
+        font-size: 1.5em;
+        color: blueviolet;
+        text-align: justify;
+
+    }

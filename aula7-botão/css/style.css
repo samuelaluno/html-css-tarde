@@ -1,0 +1,19 @@
+a {
+ background: #84e;
+ color: #fff;
+ padding: 2px;
+}
+.botão{
+    display: block;/*cria um elemento de bloco*/
+    background: #ffd700;/*cor de fundo*/
+    margin-top: 30px;/*margem do topo*/
+    color: #111;/*cor do conteudo*/
+    width: 80px;/*largura*/
+    padding: 5px;/*preenchimento interno*/
+    border: 1px solid #333;/*borda*/
+    border-radius: 2px;/*arrendadamento dos contos da borda */
+    text-decoration: none;/*remove ou adiciona linha de texto*/
+    text-align: center;/*alinhamento do texto*/
+    font-size: 14px;/*tamanho da fonte do texto*/
+    font-family: segoe UI;/*familia ou tipo de fonte*/
+} 
