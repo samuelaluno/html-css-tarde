@@ -11,8 +11,8 @@
         main{
             background-color: aliceblue;
         }
-        div{
-            display: inline-block;
+        div.quadrado{
+            
             width: 80px;
             height: 80px;
             background-color: lightgray;
@@ -51,6 +51,13 @@
             background-position: center;
             background-size: 30%;
         }
+
+        div.caixas{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
     </style>
     
 </head>
@@ -58,26 +65,62 @@
      <h1>Background</h1>
 
      <main>
-        <P>o exercio a seguir faz um rezumo de tudo  que aprendi  so bre imagens e cores de fundo 
-            utilizando a propiedade background em HTML E CSS3
-             </P>
-        <h2>cores no plano de fundo</h2>
-        <P>De forma geral, existem tres maneiras mais simplis de preencher uma caixa em HTML usando cores solidas, gradientes ou imagens . essas formas  sao representada a seguir </P>
+        <section>
+            <P>o exercio a seguir faz um resumo de tudo  que aprendi  sobre imagens e cores de fundo
+                utilizando a propiedade background em HTML E CSS3
+                 </P>
+        </section>
+
+        <section>
+            <h2>cores no plano de fundo</h2>
+
+            <P>De forma geral, existem tres maneiras mais simplis de preencher uma caixa em HTML usando cores solidas, gradientes ou imagens . essas formas  sao representada a seguir </P>
+        </section>
     
         
-        <div id="q1"></div>
-        <div id="q2"></div>
-        <div id="q3"></div>
+        <div class="caixas">
+            <figure>
+                <div class="quadrado" id="q1"></div>
+                <figcaption>cor solida</figcaption>
+            </figure>
+            <figure>
+                <div class="quadrado" id="q2"></div><figcaption>gradiente</figcaption>
+            </figure>
+            <figure>
+                <div class="quadrado" id="q3"></div><figcaption>imagem</figcaption>
+            </figure>
+        </div>
     
         <h2>imagens</h2>
-        <p>E possivel colocar <estrong>imagens</estrong> como fundo de uma caixa e configurar  sua popriedaes de 
+        <p> E possivel colocar <estrong>imagens</estrong> como fundo de uma caixa e configurar  sua popriedaes de 
         divesas maneiras.</p>
         <h2>background-repeat</h2>
-        <p>com esa prioridade  e possivel definir se uma imagem de fundo  ira se <strong>repetir</strong> quando o tamanho da caixa em que  em que estiver contida for maior do que o tamanho da im agem em si. por padrao ela sempre  vai ser repetida essa propiedade possui 4  valores</p>
+        <p>com essa prioridade  e possivel definir se uma imagem de fundo  ira se <strong>repetir</strong> quando o tamanho da caixa em que  em que estiver contida for maior do que o tamanho da im agem em si. por padrao ela sempre  vai ser repetida essa propiedade possui 4  valores</p>
         <div id="q4"></div>
         <div id="q5"></div>
         <div id="q6"></div>
         <div id="q7"></div>
+
+        <h3>Background position</h3>
+
+        <P>além de escolher o nivel  de recupetição do backgroud, tambem podemos mudar a posição de refencia de inicio das repetiçones.é considerado o conto esquerdo superior(left top), mas podemos ter varios opções.</P>
+
+        <h4>Background-size</h4>
+
+        <P>outra coisa que podemos fazer é redimensionar a imagemserá exibidada do seu tamanho natural, porám, podemos usar a propiedade background-sizepara para alterar esse comportamanto</P>
+        <p>
+            <strong>auto</strong> A imagem de fundo será aplicada em seu tamanho original.
+            <br>
+            <strong>[x]%</strong>Redimentsiona a largura da imagem da imagem e faz a altura se adaptar automaticamente.
+            <br>
+            <strong>cover</strong> Mudao tamanho da imagem para que ele seja sempre totalmente exibida na tela, sem nenhum corte.
+            <br>
+            <strong>contain</strong> Redimensiona a imagem para que ela cubra o conteiner, mesmo que para isso ocorram alguns eventuais cortes.
+            <br>
+            
+        
+        
+        </p>
         
      </main>
 
