@@ -7,16 +7,28 @@
     <style>
         body{
             background-image: url("imagens/imagens/wallpaper004.jpg");
+            border: 2px solid green;
+            background-attachment: fixed;
         }
         main{
-            background-color: aliceblue;
+            background-color:white;
+            width: 620px;
+            border: 1px solid darkblue;
+            border-radius: 10px;
+            margin: 30px;
+            margin: auto;
+
+
         }
         div.quadrado{
             
-            width: 80px;
+            width: 70px;
             height: 80px;
             background-color: lightgray;
             border-radius: 10px;
+            border: 1px solid black; 
+            display: inline-block;
+
             
         }
         #q1{
@@ -107,31 +119,121 @@
             background-position: right bottom;
             background-size: 30%;
         }
+        #g1{
+            background-image: url("imagens/imagens/github-pp.png");
+            background-size: auto;
+            background-repeat: no-repeat;
+            
+        }
+        #g2{
+            background-image: url("imagens/imagens/github-pp.png");
+            background-size: 30%;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        #g3{
+            background-image: url("imagens/imagens/github-pp.png");
+            background-size: cover;
+            background-size: 100%;
+        }
+        #g4{
+            background-image: url("imagens/imagens/github-pp.png");
+            background-size: contain;
+            
+        }
 
         div.caixas{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
         }
+        header{
+            background-color: #4450e4;
+            padding: 10px;
+            margin-bottom: 30px;
+
+            
+        }
+        header h1{
+            background-image: url("imagens/imagens/wallpaper005.jpg");
+            width: 185px;
+            padding: 2px;
+            background-size: cover;
+            margin: auto;
+            border-radius: 3px;
+
+        }
+        ul{
+            list-style-position: inside;
+            list-style-type: none;
+            margin: 0.5em;
+            
+        }
+        p{
+            padding: 0px 15px 10px 10px;
+            line-height: 1.5em;
+            text-align: 18px;
+        }
+       figcaption{
+        text-align: center;
+        font-size: 0.8em;
+       }
+a{
+    color: white;
+    text-decoration: none;
+}
+.linha{
+  border-top: 1px solid #4450e4;
+}
+.bombom{
+    text-align: center;
+    margin: 0%;
+    line-height: 2em;
+}
+footer{
+    background-color: #4450e4;
+    height: 25px;
+    text-align: center;
+    color: white;
+    
+}
+.bo{
+    text-align: center;
+    text-indent: 18px;
+}
+.text{
+    text-indent: 18px;
+}
+
+
+
+
+
+
+
+
+
+
 
     </style>
     
 </head>
 <body>
+    <header>
      <h1>Background</h1>
-
+</header>
      <main>
-        <section>
-            <P>o exercio a seguir faz um resumo de tudo  que aprendi  sobre imagens e cores de fundo
+        
+            <P class="bo">o exercio a seguir faz um resumo de tudo  que aprendi  sobre imagens e cores de fundo
                 utilizando a propiedade background em HTML E CSS3
                  </P>
-        </section>
-
-        <section>
+        
+<section class="linha">
+        
             <h2>cores no plano de fundo</h2>
 
-            <P>De forma geral, existem tres maneiras mais simplis de preencher uma caixa em HTML usando cores solidas, gradientes ou imagens . essas formas  sao representada a seguir </P>
-        </section>
+            <P class="text">De forma geral, existem tres maneiras mais simplis de preencher uma caixa em HTML usando cores solidas, gradientes ou imagens . essas formas  sao representada a seguir </P>
+        
     
         
         <div class="caixas">
@@ -146,12 +248,14 @@
                 <div class="quadrado" id="q3"></div><figcaption>imagem</figcaption>
             </figure>
         </div>
+    </section>
+    <section class="linha">
     
         <h2>imagens</h2>
-        <p> E possivel colocar <estrong>imagens</estrong> como fundo de uma caixa e configurar  sua popriedaes de 
+        <p class="text"> E possivel colocar <estrong>imagens</estrong> como fundo de uma caixa e configurar  sua popriedaes de 
         divesas maneiras.</p>
         <h2>background-repeat</h2>
-        <p>com essa prioridade  e possivel definir se uma imagem de fundo  ira se <strong>repetir</strong> quando o tamanho da caixa em que  em que estiver contida for maior do que o tamanho da im agem em si. por padrao ela sempre  vai ser repetida essa propiedade possui 4  valores</p>
+        <p class="text">com essa prioridade  e possivel definir se uma imagem de fundo  ira se <strong>repetir</strong> quando o tamanho da caixa em que  em que estiver contida for maior do que o tamanho da im agem em si. por padrao ela sempre  vai ser repetida essa propiedade possui 4  valores</p>
         
             <div class="caixas">
                 <figure>
@@ -160,52 +264,128 @@
                 </figure>
                 <figure>
                     <div class="quadrado" id="q5"></div>
+                    <figcaption>no-repeat</figcaption>
                 </figure>
-                <div class="quadrado" id="q6"></div>
-                <div class="quadrado" id="q7"></div>
-            </div>
 
+                <figure>
+                    <div class="quadrado" id="q6"></div>
+                    <figcaption>repeat-x</figcaption>
+                </figure>
+
+                <figure>
+                    <div class="quadrado" id="q7"></div>
+                    <figcaption>repeat-y</figcaption>
+                </figure>
+            </div>
+        </section>
+
+<section>
         <h3>Background position</h3>
 
-        <P>além de escolher o nivel  de recupetição do backgroud, tambem podemos mudar a posição de refencia de inicio das repetiçones.é considerado o conto esquerdo superior(left top), mas podemos ter varios opções.</P>
+        <P class="text">além de escolher o nivel  de recupetição do backgroud, tambem podemos mudar a posição de refencia de inicio das repetiçones.é considerado o conto esquerdo superior(left top), mas podemos ter varios opções.</P>
         <div class="caixas">
-            <div class="quadrado" id="f1"></div>
-            <div class="quadrado" id="f2"></div>
-            <div class="quadrado" id="f3"></div>
+            <figure>
+                <div class="quadrado" id="f1"></div>
+                <figcaption>left-top</figcaption>
+            </figure>
+            <figure>
+                <div class="quadrado" id="f2"></div>
+                <figcaption>center top</figcaption>
+            </figure>
+            <figure>
+                <div class="quadrado" id="f3"></div>
+                <figcaption>right-top</figcaption>
+            </figure>
         </div>
         <br>
         <div class="caixas">
-            <div class="quadrado" id="f4"></div>
-            <div class="quadrado" id="f5"></div>
-            <div class="quadrado" id="f6"></div>
+            <figure>
+                <div class="quadrado" id="f4"></div>
+                <figcaption>left center</figcaption>
+            </figure>
+            <figure>
+                <div class="quadrado" id="f5"></div>
+                <figcaption>center center</figcaption>
+            </figure>
+            <figure>
+                <div class="quadrado" id="f6"></div>
+                <figcaption>right center</figcaption>
+            </figure>
         </div> 
         <br>
         <div class="caixas">
-            <div class="quadrado"  class="quadrado"id="f7"></div>
-            <div class="quadrado" id="f8"></div>
-            <div class="quadrado" id="f9"></div>
+            <figure>
+                <div class="quadrado"  class="quadrado"id="f7"></div>
+                <figcaption>left bottom</figcaption>
+            </figure>
+            <figure>
+                <div class="quadrado" id="f8"></div>
+                <figcaption> center bottom</figcaption>
+            </figure>
+            <figure>
+                <div class="quadrado" id="f9"></div>
+                <figcaption>right bottom</figcaption>
+            </figure>
         </div>
-
+    </section>
+<section>
         <h4>Background-size</h4>
 
-        <P>outra coisa que podemos fazer é redimensionar a imagemserá exibidada do seu tamanho natural, porám, podemos usar a propiedade background-sizepara para alterar esse comportamanto</P>
-        <p>
-            <strong>auto</strong> A imagem de fundo será aplicada em seu tamanho original.
-            <br>
-            <strong>[x]%</strong>Redimentsiona a largura da imagem da imagem e faz a altura se adaptar automaticamente.
-            <br>
-            <strong>cover</strong> Mudao tamanho da imagem para que ele seja sempre totalmente exibida na tela, sem nenhum corte.
-            <br>
-            <strong>contain</strong> Redimensiona a imagem para que ela cubra o conteiner, mesmo que para isso ocorram alguns eventuais cortes.
-            <br>
+        <P class="text">outra coisa que podemos fazer é redimensionar a imagemserá exibidada do seu tamanho natural, porám, podemos usar a propiedade background-sizepara para alterar esse comportamanto</P>
+        <article>
+            <div class="caixas">
+                <figure>
+                    <div class="quadrado" id="g1"></div>
+                    <figcaption><code>auto</code></figcaption>
+                </figure>
             
+            
+                <figure>
+                    <div class="quadrado" id="g2"></div>
+                    <figcaption><code>[x]%</code></figcaption>
+                </figure>
+            
+                <figure>
+                    <div class="quadrado" id="g3"></div>
+                    <figcaption><code>cover</code></figcaption>
+                </figure>
+            
+                <figure>
+                    <div class="quadrado" id="g4"></div>
+                    <figcaption><code>contain</code></figcaption>
+                </figure>
+            </div>
+            
+            
+        </article>
+    </section>
+        <ul>
+           <li> <strong>auto</strong> A imagem de fundo será aplicada em seu tamanho original.</li>
+            
+            <li><strong>[x]%</strong>Redimentsiona a largura da imagem da imagem e faz a altura se adaptar automaticamente.</li><
+            
+           <li><strong>cover</strong> Mudao tamanho da imagem para que ele seja sempre totalmente exibida na tela, sem nenhum corte.</li>
+            
+            <li><strong>contain</strong> Redimensiona a imagem para que ela cubra o conteiner, mesmo que para isso ocorram alguns eventuais cortes.</li>
+            
+        </ul>
         
         
         </p>
-        
+        <h5>Background attachment</h5>
+
+        <p class="text">A ultima propiedade que podemos configurar e o vinciulo (attachment) da imagem de fundo com o resto do documento, principalmente se o conteúdo for maior do que a altura da pagina e seja necessario vazar uma rolagem vertical.</p>
+         <ul>
+        <li><strong>scroll:</strong> (padrão) a imagem de fundo vai rolar junto com o conteúdo.</li>
+        <li><strong>fixed:</strong> A imagem de fundo vai ficar fixada enquanto o conteúdo vai sendo rolado (essa propiedade você pode observar no fundo desse site).</li>
+
+    </ul >
+         <p class="linha bombom">E foi isso que aprendi sobre as <strong>Imagens de Fundo.</p>
      </main>
 
-
+    <footer>
+        <p >exercicio aula 17: utilizando github, HTML5e CSS3, feito por seu nome (link para o seu github.com)</p>
+    </footer>
 
 </body>
 </html>
