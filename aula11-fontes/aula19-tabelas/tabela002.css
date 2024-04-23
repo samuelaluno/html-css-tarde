@@ -1,0 +1,45 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+table{
+    border-collapse: collapse;
+}
+
+td,th{
+    border: 1px solid black;
+    padding: 6px;
+    width: 100px;
+    padding-left: 1px;
+}
+td.ntazul{
+    color: rgb(71, 167, 199);
+    font-weight: bold;
+}
+td.ntred{
+    background-color: rgb(255, 181, 181);
+    color: rgb(124, 38, 560);
+}
+
+td.ntazul{
+    color: rgb(71, 167, 199);
+    font-weight: bold;
+    text-align: center;
+}
+td.ntred{
+    background-color: rgb(255, 181, 181);
+    color: rgb(124, 38, 560);
+    text-align: center; 
+}
+td.ntred{
+    background-color: rgb(255, 181, 181);
+    color: rgb(124, 38, 560);
+}
+caption{
+    background-color: rgba(0, 0, 0, 0.938);
+    color: white;
+    font-weight: bold;
+}
+th{
+    background-color: rgba(238, 238, 13, 0.233);
+    font-weight: normal;
+}
