@@ -1,0 +1,25 @@
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   width: 900px;
+}
+table {
+   border-collapse: collapse;
+   width: 400px;
+   margin: auto;
+   margin-bottom: 12px;
+}
+td,th{
+    
+    padding: 15px;
+    border: 1px solid black;
+}
+td{
+    padding: 8px;
+    text-align: center;
+}
+th{
+    background-color: #bbb;
+}
+div{
+    border-bottom: 2px solid #84e;
+}

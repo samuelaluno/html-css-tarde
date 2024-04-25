@@ -4,41 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <link rel="stylesheet" href="tabelas004.css">
 </head>
 <body>
     <h1>Tabelas</h1>
-    <h1>Tabelas Simples</h1>
-<p> tabelas são um recurso muito importante para a organização dados no geral, em HTML. para criar
-    uma tabela usa-se a tag table e, dentro dela, algumas tags de definição de conteúdo, tais como: </p>
-    <ul>
-        <li><code> tr </code>(Table Row) - Linha da tabela</li>
-        <li><code> th </code>(Table Header) - Cabeçalho da tabela</li>
-        <li><code> td </code>(Table Data) - Dado da tabela</li>
-    </ul>
-<p> uma tabela simples tem geralmente esta aparência   </p>
+    <div>
+        <h2>Tabelas Simples</h2>
+        <p> tabelas são um recurso muito importante para a organização dados no geral, em HTML. para criar
+        uma tabela usa-se a tag table e, dentro dela, algumas tags de definição de conteúdo, tais como: </p>
+        <ul>
+            <li><code> tr </code>(Table Row) - Linha da tabela</li>
+            <li><code> th </code>(Table Header) - Cabeçalho da tabela</li>
+            <li><code> td </code>(Table Data) - Dado da tabela</li>
+        </ul>
+        <p> uma tabela simples tem geralmente esta aparência   </p>
+        
+        <table>
+           <tr class="cinza">
+        <th>Código</th>
+        <th>Nomes</th>
+        <th>Dados</th>
+           </tr>
+           <tr>
+        <td>001</td>
+        <td>Alfredo</td>
+        <td>Dado 1</td>
+           </tr>
+           <tr>
+        <td>002</td>
+        <td>Guilherme</td>
+        <td>Dado 2</td>
+           </tr>
+           <tr>
+        <td>003</td>
+        <td>Larissa</td>
+        <td>Dado 3</td>
+           </tr>
+        </table>
+    </div>
+    <div>
+        <h3>Anatomia de tabelas</h3>
+<p>    Essa anatomia é utilizada para tabelas grandes e melhora o resultado em  <strong>sites de busca,</strong> consiste em adicionar os seguintes elementos na tabela: </p>
+<ul>
+    <li><code>caption</code> - Legenda/Descrição</li>
+    <li><code>thead</code> - Cabeçalho</li>
+    <li><code>tbody</code> - Corpo</li>
+    <LI><code>tfoot</code> - Rodapé</LI>
+</ul>
+<P> Todos essses elementos podem conter seus próprios <code>tr, td e th</code>(menos o <code>caption</code>).Indepedente da ordem que você colocar as tags de anatomia, o navegador <strong>sempre</strong> vai organizar na ordem correta</P>
 
-<table>
-   <tr>
-    <th>Código</th>
-    <th>Nomes</th>
-    <th>Dados</th>
-   </tr>
-   <tr>
-    <td>001</td>
-    <td>Alfredo</td>
-    <td>Dado 1</td>
-   </tr>
-   <tr>
-    <td>002</td>
-    <td>Guilherme</td>
-    <td>Dado 2</td>
-   </tr>
-   <tr>
-    <td>003</td>
-    <td>Larissa</td>
-    <td>Dado 3</td>
-   </tr>
+
+<h4>Scope</h4>
+<p>É um atributo de um<code> th </code>que indica para qual direção o titulo esta mostrando os dados, pode ter os valores:</p>
+
+<ul>
+<li><code>row</code> - Dados em linha</li>
+<li><code>col</code> - Dados em coluna</li>
+<li><code>colgroup</code> - Dados num conjunto de colunas (para células mescladas)</li>
+<LI><code>rowgroup</code> - Dados num conjunto de linhas (para células mescladas)</LI>
+
+<p>Obs: Esse atributo é extremamente útil para ajudar o site a ser relevante <strong>sites de busca.</strong> Um exemplo de uma tabela utilizando todos os atributos da anatomia citada a cima pode ser vista a seguir:</p>
+
+<table class="boletim">
+    <caption>Boletim</caption>
+<tr>
+    <th>Aluno</th>
+    <th>Nota</th>
+</tr>
+<tr>
+    <td>Ana</td>
+    <td>8</td>
+</tr>
+<tr>
+    <td>Dimi</td>
+    <td>7</td>
+</tr>
+<tr>
+    <td>Gustavo</td>
+    <td>10</td>
+</tr>
+<tr>
+    <td>Laís</td>
+    <td>7</td>
+
+</tr>
+<tr>
+    <td>Rodrigo</td>
+    <td>5</td>
+</tr>
+<tr>
+    <td>Samira</td>
+    <td>6</td>
+</tr>
+<tr>
+<td>Vinícius</td>
+<td>8</td>
+</tr>
+
+<tr>
+    <td></td>
+</tr>
+    
+    
 </table>
+
+</ul>
+    </div>
+
     
 </body>
 </html>
