@@ -102,15 +102,98 @@
 </tr>
 
 <tr>
-    <td></td>
+    <th>média</th>
+    <th>7,2</th>
 </tr>
     
     
 </table>
 
 </ul>
-    </div>
 
+    </div>
+    <div>
+        <h2>Mesclagem de Células</h2>
+        <p>  mesclager  células em uma tabela é algo bem comum e importante, em HTML é necessario colocar os seguintes atributos nas tags <code>th</code> ou <code>td</code>  </p>
+        <ul>
+        <li><code>colspan</code> - Mesclagem em coluna.</li>
+        <li><code>rowspan</code> - Mesclagem em linha.</li>
+        </ul>
+        <p> Depois, adiciona-se o valor que representa o número de células que ela irá ocupar. Um exemplo pode ser visto a seguir  </p>
+        
+        <table class="TR">
+        <tr>
+            <td>A</td>
+            <th colspan="2">B</th>
+        </tr>
+        <tr>
+            <th rowspan="2">C</th>
+            <td>D</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>G</td>
+        </tr>
     
+    
+ </table>
+</div>
+
+    <div>
+        <h2>Estilização de Colunas</h2>
+        <p>  Para especificar uma coluna em uma tabala HTML, usa-se a tag <code>colgruup,</code> ela é uma tag que define as <strong>colunas</strong> em uma tabela cada coluna  e respresentada por uma tag<code>col</code> que fica dentro de <code>colgroup</code> isso facilita na hora de estilizar colunas com CSS </p>
+        <P>  A tag col possui O <STrong>Parâmetro</STrong><code>span</code> que especifica quantas colunas uma mesma tag <code>col</code> pode representar. </P>
+        <p>  Um exemplo de tabela com colunas estilçizadas: </p>
+<table .tb>
+<tr>
+    <th>Nome</th>
+    <th>Idade</th>
+    <th>Sexo</th>
+    <th>profissão</th>
+</tr>
+<tr>
+   <td>Ana Maria</td>
+   <td>F</td>
+   <td>25</td>
+   <td>Jornalismo</td> 
+</tr>
+<tr>
+    <td>Claudio</td>
+    <td>M</td>
+    <td>28</td>
+    <td>Programador</td>
+</tr>
+<tr>
+    <td>Gustavo</td>
+    <td>M</td>
+    <td>42</td>
+    <td>Professor</td>
+</tr>
+<tr>
+    <td>Heitor</td>
+    <td>M</>
+    <td>19</td>
+    <td>Vendedor</td>
+</tr>
+<tr>
+     <td>Maria</td>
+     <td>F</>
+     <td>39</td>
+     <td>Médica</td>
+</tr>
+<tr>
+    <td>Otávio</td>
+    <td>M</td>
+    <td>22</td>
+    <td>Nutricionista</td>
+</tr>
+</table>
+
+    </div>
+ 
+
+
+     
 </body>
 </html>
