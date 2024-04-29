@@ -1,0 +1,24 @@
+body{
+  font-family: Calibri, Helvetica, sans-serif;
+}
+
+table{
+  border-collapse: collapse;
+  margin: auto;
+  position: relative;
+  
+}
+
+td,th {
+  border: 1px solid black;
+  text-align: center;
+}
+tr:nth-child(2n){
+  background-color: #84e;
+}
+th{
+  background-color: #111;
+  color: white;
+  position: sticky;
+  top: -1px;
+}

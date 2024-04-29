@@ -1,0 +1,26 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+  width: 300px;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  padding: 6px;
+  text-align: left;
+}
+
+tr.negrito{
+  font-weight: bold;
+}
+
+td.amarelo{
+  background-color: yellow;
+}
+
+tr.cinza{
+  background-color: #d3d3d3;
+}

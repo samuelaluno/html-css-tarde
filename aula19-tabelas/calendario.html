@@ -1,0 +1,199 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendario</title>
+</head>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1200px;
+  }
+
+  div.meses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+  }
+
+  table {
+    width: 400px;
+    border-collapse: collapse;
+  }
+
+  td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+  }
+
+  th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+
+  }
+
+  .domingo {
+    color: red;
+    font-weight: bold;
+  }
+
+  .destaque {
+    background-color: lightgrey;
+  }
+
+h1 {
+    text-align: center;
+  }
+</style>
+
+<body>
+
+    <h1>CALENDÁRIO 2024</h1>
+
+
+  <div class="meses">
+
+    <div class="maio">
+
+      <figure>
+        <h2>Maio / 2024</h2>
+        <table>
+          <tr class="destaque"> <!--Linha dos dias da semana-->
+            <th class="domingo">DOM</th>
+            <th>SEG</th>
+            <th>TER</th>
+            <th>QUA</th>
+            <th>QUI</th>
+            <th>SEX</th>
+            <th>SÁB</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="domingo"><abbr title="Dia do Trabalho">1</abbr></td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td class="domingo">5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+          </tr>
+          <tr>
+            <td class="domingo">12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <td class="domingo">19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td class="domingo">26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td class="domingo"><abbr title="Corpus Christ">30</abbr></td>
+            <td>31</td>
+            <td></td>
+          </tr>
+        </table>
+        <figcaption class="domingo">1 - Dia do Trabalho</figcaption>
+        <figcaption class="domingo">30 - Corpus Christ</figcaption>
+      </figure>
+    </div>
+
+    <div class="junho">
+      <h2>Junho / 2024</h2>
+      <table>
+        <tr class="destaque"> <!--Linha dos dias da semana-->
+          <th class="domingo">DOM</th>
+          <th>SEG</th>
+          <th>TER</th>
+          <th>QUA</th>
+          <th>QUI</th>
+          <th>SEX</th>
+          <th>SÁB</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></abbr></td>
+          <td></td>
+          <td></td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td class="domingo">2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+
+        </tr>
+        <tr>
+          <td class="domingo">9</td>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td class="domingo">16</td>
+          <td>17</td>
+          <td>18</td>
+          <td>19</td>
+          <td>20</td>
+          <td>21</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td class="domingo">23</td>
+          <td>24</td>
+          <td>25</td>
+          <td>26</td>
+          <td>27</td>
+          <td>28</td>
+          <td>29</td>
+        </tr>
+        <tr>
+          <td class="domingo">30</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

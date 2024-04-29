@@ -1,0 +1,22 @@
+body{
+  font-family: Calibri, Helvetica, sans-serif;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+td,th {
+  border: 1px solid black;
+  padding: 6px;
+}
+
+td.ntazul{
+  color: rgb(71, 167, 199);
+  font-weight: bold;
+}
+td.ntred{
+  background-color: rgb(255, 195, 205);
+  color: rgb(124, 38, 56);
+  font-weight: bold;
+}
