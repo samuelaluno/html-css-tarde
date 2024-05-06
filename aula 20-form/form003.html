@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+    <h1>Mais tipos de input</h1>
+    <form action="get">
+        <P>
+            <label for="idfoto">foto do perfil</label>
+            <input type="file"accept="image/*" nome="foto"id="idfoto">
+        </P>
+        <p>
+            <label for="idage">idade</label>
+            <input type="number" nome="age" id="idage" min="1" max="120" value="20">
+        </p>
+        <P>
+            <fieldset>
+                <legend>Sexo</legend>
+                <label for="idsexom">Masculino</label>
+                <input type="radio" name="sex" id="idsexM">
+                <label for="idsexf">Feminino</label>
+                <input type="radio" name="sex" id="idsexF">
+            </fieldset>
+        </P>
+        <p>
+            <label for="idfone">telefone</label>
+            <input type="tel" name="fone" id="idfone"placeholder="(xx) xxxx-xxxx" pattern="\([0-9]{2}\)([\s])[0-9]{4,6}-[0-9]{4}">
+            
+        </p>
+         <P>
+            <label for="idmail">E-mail</label>
+            <input type="email" nome="email" id="idemail" size="20" maxlength="50">
+         </P>
+         <p>
+            <label for="idsenha">Senha</label>
+            <input type="password" nome="idsenha" minlength="6" maxlength="8" size="10">
+        </p>
+        <P>
+            <label for="idmes">Mes de aniversario:</label>
+            <input type="month" nome="mes" id="idmes">
+        </P>
+        <P>
+            <label for="iddata">Data</label>
+            <input type="dete" nome="data" id="iddata">
+        </P>
+        <P>
+            <label for="idhora">Hora da compra</label>
+            <input type="time" name="hora" id="idhora">
+        </P>
+        <P>
+            <label for="idcor">cor</label>
+            <input type="color" name="cor" id="idcolor" value="#8844ee">
+        </P>
+        <P>
+            <label for="idsat">Nivel de satisfação</label>
+            <input type="range" name="sat" id="idsat">
+        </P>
+        <P>
+            <input type="checkbox" name="aceito" id="idaceito">
+            <label for="idaceito">Aceito os termos de cerviso.</label>
+        </P>
+
+        <P>
+        <input type="submit" value="Enviar">
+        </P>
+        
+    </form>
+</body>
+</html>
