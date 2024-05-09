@@ -1,0 +1,49 @@
+.centeri{
+    text-align: center;
+}
+
+
+.colunas{
+    display: flex;
+    justify-content: center;
+   
+     gap: 8px;
+}
+
+.checkbox{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #bf8c91;
+}
+main{
+    display: flex;
+    background-color: #bf8c91;
+    width: 520px;
+    height: 1120px;
+    margin: auto;
+
+}
+article{
+   background-color: white;
+    border: 1px solid #FFFFFF;
+    width: 500px;
+    margin: auto;
+}
+h1{
+    text-align: center;
+    color: white;
+  
+     
+}
+header{
+    background-color: #7494be;
+
+}
+fieldset{
+    border:1px solid #bf8c91;
+}
+
+
+
+
+
