@@ -28,6 +28,7 @@ article{
     border: 1px solid #FFFFFF;
     width: 500px;
     margin: auto;
+    height: 1080px;
 }
 h1{
     text-align: center;
@@ -41,7 +42,62 @@ header{
 }
 fieldset{
     border:1px solid #bf8c91;
+    width: 80px;
 }
+.pp{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    color: #7494be;
+}
+em{
+    color: white;
+    background-color: #bf8c91;
+    border: 1px solid  #bf8c91;
+    border-radius: 5px ;
+}
+.tiran{
+    border: 1px solid #4E75A3;
+    color: aliceblue;
+    background-color: #78A8BF;
+    border-radius: 5PX;
+    width: 150PX;
+    text-align: center;
+}
+.local{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.AA{
+    color: #4E75A3;
+}
+p, h3{
+    color: #4E75A3;
+}
+footer{
+    background-color: #4E75A3;
+     
+}
+.BB{
+     color: white;
+     text-align: center;
+
+}
+a{
+    color: #FFFFFF;
+    text-decoration: none
+}
+legend{
+    color: #bf8c91;
+}
+.CC{
+    border: 1px solid #bf8c91;
+    
+}
+
+
 
 
 
